@@ -1,4 +1,6 @@
 //Module imports
+@use 'nav';
+@use 'body';
 
 //Globals
 $primaryBackground: #000000;
@@ -11,4 +13,28 @@ $primaryFontColor: #ffffff;
     margin: 0;
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
+    background-color: $primaryBackground;
+    color: $primaryFontColor;
+}
+
+.calculator__Box{
+    display: grid;
+    grid-template-columns: 98.75vw;
+    grid-template-areas: 
+    "input"
+    "rows"
+    "rows"
+    "rows"
+    "rows"
+    "rows"
+    ;
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 98.75vw;
+    height: 98.75vh;
+
+    border: 2px solid red;
+    min-width: 375px;
 }

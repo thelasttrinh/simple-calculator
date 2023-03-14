@@ -4,42 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Calculator</title>
   </head>
-  <nav class="inputLine">
-    <input type="text" name="inputLine" autocomplete="off" />
-  </nav>
-  <body>
-    <div class="firstRow">
-      <button>C</button>
-      <button>+/-</button>
-      <button>%</button>
-      <button>/</button>
-    </div>
-    <div class="secondRow">
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button>x</button>
-    </div>
+  <div class="calculator__Box">
+    <nav class="calculator__nav">
+      <input type="text" name="inputLine" id="inputBar" autocomplete="off" />
+    </nav>
+    <body>
+      <div class="firstRow">
+        <button>C</button>
+        <button>+/-</button>
+        <button>%</button>
+        <button id="firstRow__Divide">/</button>
+      </div>
+      <div class="secondRow">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button id="secondRow__Multiply">x</button>
+      </div>
 
-    <div class="thirdRow">
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button>-</button>
-    </div>
+      <div class="thirdRow">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button id="thirdRow__Subtract">-</button>
+      </div>
 
-    <div class="fourthRow">
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>+</button>
-    </div>
-    <div>
-      <button>0</button>
-      <button>.</button>
-      <button>=</button>
-    </div>
-  </body>
+      <div class="fourthRow">
+        <button id="button1">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button id="fourthRow__Addition">+</button>
+      </div>
+      <div class="fifthRow">
+        <button>0</button>
+        <button>.</button>
+        <button id="fifthRow__Calculate">=</button>
+      </div>
+    </body>
+  </div>
+  <script src="script.js"></script>
 </html>
