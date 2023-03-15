@@ -15,7 +15,8 @@ nav {
 
 .firstRow {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 0.4rem;
   align-items: center;
   border: 2px solid pink;
 }
