@@ -2,17 +2,21 @@ nav{
     grid-area: input;
     display: flex;
     justify-content: center;
+    align-self: center;
+    width: 98.75vw;
     height: 100%;
-    border: 2px solid blue;
-    // box-sizing: border-box;
+    border: 2px solid green;
 }
 
 
 #inputBar{
     text-align: right;
-    font-size: 2.5rem;
-    width: 98.75vw;
-    max-width: 100%; /* optionally set a maximum width to prevent the input from becoming too wide */
+    font-size: 1.67rem;
+    border: none;
+    border: 2px solid blue;
+    margin-right: 6.25px;
+    // width: 98.75vw;
+    // max-width: 100%; /* optionally set a maximum width to prevent the input from becoming too wide */
 }
 
 

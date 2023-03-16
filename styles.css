@@ -2,21 +2,24 @@ nav {
   grid-area: input;
   display: flex;
   justify-content: center;
+  align-self: center;
+  width: 98.75vw;
   height: 100%;
-  border: 2px solid blue;
+  border: 2px solid green;
 }
 
 #inputBar {
   text-align: right;
-  font-size: 2.5rem;
-  width: 98.75vw;
-  max-width: 100%; /* optionally set a maximum width to prevent the input from becoming too wide */
+  font-size: 1.67rem;
+  border: none;
+  border: 2px solid blue;
+  margin-right: 6.25px;
 }
 
 .firstRow {
   display: flex;
   justify-content: center;
-  gap: 0.4rem;
+  gap: 0.8rem;
   align-items: center;
   border: 2px solid pink;
 }
@@ -36,7 +39,8 @@ nav {
 
 .secondRow {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 0.8rem;
   align-items: center;
   border: 2px solid pink;
 }
@@ -56,7 +60,8 @@ nav {
 
 .thirdRow {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 0.8rem;
   align-items: center;
   border: 2px solid pink;
 }
@@ -76,7 +81,8 @@ nav {
 
 .fourthRow {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 0.8rem;
   align-items: center;
   border: 2px solid pink;
 }
@@ -96,7 +102,8 @@ nav {
 
 .fifthRow {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 0.8rem;
   align-items: center;
   border: 2px solid pink;
 }
@@ -109,13 +116,19 @@ nav {
   border: #333333;
   flex-shrink: 0;
 }
+.fifthRow #button0 {
+  border-radius: 1.875rem;
+  width: 8.95rem;
+  text-align: left;
+  text-indent: 1.55rem;
+}
 .fifthRow #fifthRow__Calculate {
   background-color: #fe9504;
   border: #fe9504;
 }
 
 .calculator__body {
-  grid-area: body;
+  grid-area: rows;
 }
 
 * {
@@ -132,10 +145,9 @@ nav {
   grid-template-areas: "input" "rows" "rows" "rows" "rows" "rows";
   grid-gap: 5px;
   justify-content: center;
-  align-items: center;
   margin: auto;
   width: 98.75vw;
   height: 98.75vh;
   border: 2px solid red;
-  min-width: 375px;
+  min-width: 23.4375rem;
 }/*# sourceMappingURL=styles.css.map */

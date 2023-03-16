@@ -101,7 +101,7 @@ positiveNegative.addEventListener("click", (event) => {
 
 //Convert to percent
 
-const buttonPercent = document.getElementById("buttonPercent");
+const buttonPercent = document.querySelector("#buttonPercent");
 //Note to self: Works initially for ints, but doesn't cut off like how app does
 
 buttonPercent.addEventListener("click", (event) => {
@@ -110,3 +110,13 @@ buttonPercent.addEventListener("click", (event) => {
   const percentVal = parseFloat(currentVal / 100);
   inputBar.value = percentVal;
 });
+
+//Use division
+
+//Use multiplication
+
+//Use substraction
+
+//Use addition
+
+//Do calcs with equal

@@ -1,7 +1,7 @@
 .firstRow{
     display: flex;
     justify-content: center;
-    gap: .4rem;
+    gap: .8rem;
     align-items: center;
     button{
         border-radius: 50%;
@@ -23,7 +23,8 @@
 
 .secondRow{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: .8rem;
     align-items: center;
     button{
         border-radius: 50%;
@@ -44,7 +45,8 @@
 
 .thirdRow{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: .8rem;
     align-items: center;
     button{
         border-radius: 50%;
@@ -64,7 +66,8 @@
 
 .fourthRow{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: .8rem;
     align-items: center;
     button{
         border-radius: 50%;
@@ -84,7 +87,8 @@
 
 .fifthRow{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: .8rem;
     align-items: center;
     button{
         border-radius: 50%;
@@ -95,6 +99,14 @@
         border: #333333;
         flex-shrink: 0;
     }
+
+    #button0{
+        border-radius: 1.875rem;
+        width: 8.95rem;
+        text-align: left;
+        text-indent: 1.55rem;
+    }
+
     #fifthRow__Calculate{
         background-color: #fe9504;
         border:#fe9504;
