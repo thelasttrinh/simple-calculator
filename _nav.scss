@@ -1,10 +1,10 @@
 nav{
     grid-area: input;
     display: flex;
-    justify-content: flex-end;
-    align-self: flex-end;
+    justify-content: center;
+    align-self: center;
     width: 98.75vw;
-    height: 10.75vw;
+    height: 20vw;
     // border: 2px solid green;
 }
 
@@ -16,4 +16,13 @@ nav{
     margin: auto;
     border: none;
     height: 10.75vw;
+    border: 2px solid white;
+    overflow-wrap: normal;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:300px){
+    #inputBar{
+        font-size: 1.5rem;
+    }
 }

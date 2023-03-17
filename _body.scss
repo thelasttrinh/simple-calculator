@@ -2,11 +2,20 @@
 
 body{
     grid-area: rows;
-    // grid-template-rows: repeat(5,1fr);
-    border: 2px solid green;
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     margin: auto;
-
+    // border: 2px solid white;
+}
+.body__calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:25%;
+    margin-left: 37.25%;
+    // border: 2px solid white;
+    border-radius: 10px;
+    gap: 5px;
 }

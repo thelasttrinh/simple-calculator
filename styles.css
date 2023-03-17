@@ -1,10 +1,10 @@
 nav {
   grid-area: input;
   display: flex;
-  justify-content: flex-end;
-  align-self: flex-end;
+  justify-content: center;
+  align-self: center;
   width: 98.75vw;
-  height: 10.75vw;
+  height: 20vw;
 }
 
 #inputBar {
@@ -14,14 +14,21 @@ nav {
   margin: auto;
   border: none;
   height: 10.75vw;
+  border: 2px solid white;
+  overflow-wrap: normal;
+  border-radius: 20px;
 }
 
+@media screen and (max-width: 300px) {
+  #inputBar {
+    font-size: 1.5rem;
+  }
+}
 .firstRow {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
-  border: 2px solid pink;
 }
 .firstRow button {
   border-radius: 50%;
@@ -32,9 +39,26 @@ nav {
   border: #a5a5a5;
   flex-shrink: 0;
 }
-.firstRow #firstRow__Divide {
+.firstRow #button__Divide {
   background-color: #fe9504;
   border: #fe9504;
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+.firstRow button:active {
+  animation: fade 0.1s linear;
+}
+.firstRow button:hover {
+  background-color: #e6e6e6;
+}
+.firstRow #button__Divide:hover {
+  background-color: #e6e6e6;
 }
 
 .secondRow {
@@ -52,7 +76,10 @@ nav {
   border: #333333;
   flex-shrink: 0;
 }
-.secondRow #secondRow__Multiply {
+.secondRow button:hover {
+  background-color: #e6e6e6;
+}
+.secondRow #button__Multiply {
   background-color: #fe9504;
   border: #fe9504;
 }
@@ -72,7 +99,10 @@ nav {
   border: #333333;
   flex-shrink: 0;
 }
-.thirdRow #thirdRow__Subtract {
+.thirdRow button:hover {
+  background-color: #e6e6e6;
+}
+.thirdRow #button__Subtract {
   background-color: #fe9504;
   border: #fe9504;
 }
@@ -92,7 +122,10 @@ nav {
   border: #333333;
   flex-shrink: 0;
 }
-.fourthRow #fourthRow__Addition {
+.fourthRow button:hover {
+  background-color: #e6e6e6;
+}
+.fourthRow #button__Addition {
   background-color: #fe9504;
   border: #fe9504;
 }
@@ -112,13 +145,16 @@ nav {
   border: #333333;
   flex-shrink: 0;
 }
+.fifthRow button:hover {
+  background-color: #e6e6e6;
+}
 .fifthRow #button0 {
   border-radius: 1.875rem;
   width: 8.95rem;
   text-align: left;
   text-indent: 1.55rem;
 }
-.fifthRow #fifthRow__Calculate {
+.fifthRow #button__Calculate {
   background-color: #fe9504;
   border: #fe9504;
 }
@@ -142,11 +178,21 @@ nav {
 }
 body {
   grid-area: rows;
-  border: 2px solid green;
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
   margin: auto;
+}
+
+.body__calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 25%;
+  margin-left: 37.25%;
+  border-radius: 10px;
+  gap: 5px;
 }
 
 * {
@@ -159,12 +205,12 @@ body {
 
 .calculator__Box {
   display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: min-content;
   grid-template-areas: "input" "rows" "rows" "rows" "rows" "rows";
   grid-gap: 5px;
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 98.75vw;
-  height: 68.75vh;
-  border: 2px solid red;
+  width: 98.75%;
 }/*# sourceMappingURL=styles.css.map */

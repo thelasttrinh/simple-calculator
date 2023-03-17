@@ -12,11 +12,32 @@
         border: #a5a5a5;
         flex-shrink: 0;
     }
-    #firstRow__Divide{
+    #button__Divide{
         background-color: #fe9504;
         border:#fe9504;
     }
-    border: 2px solid pink;
+
+    @keyframes fade {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0.5;
+        }
+    }
+
+    button:active{
+        animation: fade 0.1s linear;
+    }
+    button:hover{
+        background-color: #e6e6e6;
+    }
+    #button__Divide:hover{
+        background-color: #e6e6e6;
+    }
+    
+    // border: 2px solid pink;
+    
 }
 
 .secondRow{
@@ -33,7 +54,12 @@
         border: #333333;
         flex-shrink: 0;
     }
-    #secondRow__Multiply{
+
+    button:hover{
+        background-color: #e6e6e6;
+    }
+
+    #button__Multiply{
         background-color: #fe9504;
         border:#fe9504;
     }
@@ -55,7 +81,11 @@
         border: #333333;
         flex-shrink: 0;
     }
-    #thirdRow__Subtract{
+    button:hover{
+        background-color: #e6e6e6;
+    }
+    
+    #button__Subtract{
         background-color: #fe9504;
         border:#fe9504;
     }
@@ -76,7 +106,12 @@
         border: #333333;
         flex-shrink: 0;
     }
-    #fourthRow__Addition{
+
+    button:hover{
+        background-color: #e6e6e6;
+    }
+
+    #button__Addition{
         background-color: #fe9504;
         border:#fe9504;
     }
@@ -98,6 +133,10 @@
         flex-shrink: 0;
     }
 
+    button:hover{
+        background-color: #e6e6e6;
+    }
+
     #button0{
         border-radius: 1.875rem;
         width: 8.95rem;
@@ -105,7 +144,7 @@
         text-indent: 1.55rem;
     }
 
-    #fifthRow__Calculate{
+    #button__Calculate{
         background-color: #fe9504;
         border:#fe9504;
     }

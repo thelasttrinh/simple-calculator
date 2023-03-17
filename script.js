@@ -103,20 +103,81 @@ positiveNegative.addEventListener("click", (event) => {
 
 const buttonPercent = document.querySelector("#buttonPercent");
 //Note to self: Works initially for ints, but doesn't cut off like how app does
-
+let count = 2;
 buttonPercent.addEventListener("click", (event) => {
   const inputBar = document.getElementById("inputBar");
   const currentVal = Number(inputBar.value);
   const percentVal = currentVal / 100;
-  inputBar.value = percentVal;
+  inputBar.value = percentVal.toFixed(count);
+  count = count < 10 ? count + 2 : (count = 0);
 });
+
+//Add decimal
+const buttonDecimal = document.querySelector("#button__Decimal");
+
+buttonDecimal.addEventListener("click", (event) => {
+  const inputBar = document.getElementById("inputBar");
+  const newVal = inputBar.value + ".";
+  inputBar.value = newVal;
+});
+
+//Variables for operations
+let operations = null;
+let currentVal = 0;
 
 //Use division
 
+const buttonDivide = document.querySelector("#button__Divide");
+
+buttonDivide.addEventListener("click", (event) => {
+  operations = "divide";
+  currentVal = Number(inputBar.value);
+  inputBar.value = "";
+});
+
 //Use multiplication
+const buttonMultiply = document.querySelector("#button__Multiply");
+
+buttonMultiply.addEventListener("click", (event) => {
+  operations = "multiply";
+  currentVal = Number(inputBar.value);
+  inputBar.value = "";
+});
 
 //Use substraction
+const buttonSubstract = document.querySelector("#button__Subtract");
+
+buttonSubstract.addEventListener("click", (event) => {
+  operations = "subtract";
+  currentVal = Number(inputBar.value);
+  inputBar.value = "";
+});
 
 //Use addition
+const buttonAddition = document.querySelector("#button__Addition");
+
+buttonAddition.addEventListener("click", (event) => {
+  operations = "addition";
+  currentVal = Number(inputBar.value);
+  inputBar.value = "";
+});
 
 //Do calcs with equal
+const buttonCalculate = document.querySelector("#button__Calculate");
+
+buttonCalculate.addEventListener("click", (event) => {
+  const newVal = Number(inputBar.value);
+  let calc = 0;
+  if (operations == "divide" && newVal !== 0) {
+    calc = currentVal / newVal;
+  } else if (operations == "divide" && newVal == 0) {
+    calc = "Error";
+  } else if (operations == "multiply") {
+    calc = currentVal * newVal;
+  } else if (operations == "subtract") {
+    calc = currentVal - newVal;
+  } else if (operations == "addition") {
+    calc = currentVal + newVal;
+  }
+  inputBar.value = calc;
+});
