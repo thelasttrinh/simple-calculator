@@ -1,7 +1,7 @@
 nav{
     grid-area: input;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-self: flex-end;
     width: 98.75vw;
     height: 10.75vw;
@@ -10,8 +10,8 @@ nav{
 
 
 #inputBar{
-    text-align: end;
-    align-self: end;
+    text-align: right;
+    vertical-align: bottom;
     font-size: 1.67rem;
     margin: auto;
     border: none;

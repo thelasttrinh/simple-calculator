@@ -1,15 +1,15 @@
 nav {
   grid-area: input;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-self: flex-end;
   width: 98.75vw;
   height: 10.75vw;
 }
 
 #inputBar {
-  text-align: end;
-  align-self: end;
+  text-align: right;
+  vertical-align: bottom;
   font-size: 1.67rem;
   margin: auto;
   border: none;
@@ -37,11 +37,6 @@ nav {
   border: #fe9504;
 }
 
-@media screen and (max-width: 280px) {
-  .firstRow {
-    gap: 0.2rem;
-  }
-}
 .secondRow {
   display: flex;
   justify-content: center;
@@ -50,9 +45,9 @@ nav {
 }
 .secondRow button {
   border-radius: 50%;
-  width: 66px;
-  height: 66px;
-  font-size: 24px;
+  width: 4.125rem;
+  height: 4.125rem;
+  font-size: 1.5rem;
   background-color: #333333;
   border: #333333;
   flex-shrink: 0;
@@ -70,9 +65,9 @@ nav {
 }
 .thirdRow button {
   border-radius: 50%;
-  width: 66px;
-  height: 66px;
-  font-size: 24px;
+  width: 4.125rem;
+  height: 4.125rem;
+  font-size: 1.5rem;
   background-color: #333333;
   border: #333333;
   flex-shrink: 0;
@@ -90,9 +85,9 @@ nav {
 }
 .fourthRow button {
   border-radius: 50%;
-  width: 66px;
-  height: 66px;
-  font-size: 24px;
+  width: 4.125rem;
+  height: 4.125rem;
+  font-size: 1.5rem;
   background-color: #333333;
   border: #333333;
   flex-shrink: 0;
@@ -110,9 +105,9 @@ nav {
 }
 .fifthRow button {
   border-radius: 50%;
-  width: 66px;
-  height: 66px;
-  font-size: 24px;
+  width: 4.125rem;
+  height: 4.125rem;
+  font-size: 1.5rem;
   background-color: #333333;
   border: #333333;
   flex-shrink: 0;
@@ -128,6 +123,23 @@ nav {
   border: #fe9504;
 }
 
+@media screen and (max-width: 280px) {
+  .firstRow {
+    gap: 0.2rem;
+  }
+  .secondRow {
+    gap: 0.2rem;
+  }
+  .thirdRow {
+    gap: 0.2rem;
+  }
+  .fourthRow {
+    gap: 0.2rem;
+  }
+  .fifthRow {
+    gap: 0.1rem;
+  }
+}
 body {
   grid-area: rows;
   border: 2px solid green;
