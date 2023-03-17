@@ -1,8 +1,8 @@
 .firstRow{
     display: flex;
-    justify-content: center;
-    gap: .8rem;
+    justify-content:center;
     align-items: center;
+    gap: .8rem;
     button{
         border-radius: 50%;
         width: 4.125rem;
@@ -17,7 +17,12 @@
         border:#fe9504;
     }
     border: 2px solid pink;
-    // min-width: 375px;
+}
+
+@media screen and (max-width:280px){
+    .firstRow{
+        gap: 0.2rem;
+    }
 }
 
 
@@ -40,7 +45,7 @@
         border:#fe9504;
     }
 
-    border: 2px solid pink;
+    // border: 2px solid pink;
 }
 
 .thirdRow{
@@ -61,7 +66,7 @@
         background-color: #fe9504;
         border:#fe9504;
     }
-    border: 2px solid pink;
+    // border: 2px solid pink;
 }
 
 .fourthRow{
@@ -82,7 +87,7 @@
         background-color: #fe9504;
         border:#fe9504;
     }
-    border: 2px solid pink;
+    // border: 2px solid pink;
 }
 
 .fifthRow{
@@ -111,5 +116,5 @@
         background-color: #fe9504;
         border:#fe9504;
     }
-    border: 2px solid pink;
+    // border: 2px solid pink;
 }

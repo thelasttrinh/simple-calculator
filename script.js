@@ -107,7 +107,7 @@ const buttonPercent = document.querySelector("#buttonPercent");
 buttonPercent.addEventListener("click", (event) => {
   const inputBar = document.getElementById("inputBar");
   const currentVal = Number(inputBar.value);
-  const percentVal = parseFloat(currentVal / 100);
+  const percentVal = currentVal / 100;
   inputBar.value = percentVal;
 });
 

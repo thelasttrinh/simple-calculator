@@ -1,5 +1,12 @@
 @use 'rows';
 
-.calculator__body{
+body{
     grid-area: rows;
+    // grid-template-rows: repeat(5,1fr);
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+
 }

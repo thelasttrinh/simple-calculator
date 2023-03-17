@@ -19,7 +19,6 @@ $primaryFontColor: #ffffff;
 
 .calculator__Box{
     display: grid;
-    grid-template-columns: 98.75vw;
     grid-template-areas: 
     "input"
     "rows"
@@ -30,11 +29,13 @@ $primaryFontColor: #ffffff;
     ;
     grid-gap: 5px;
     justify-content: center;
-    // align-items: center;
+    align-items: center;
     margin: auto;
     width: 98.75vw;
-    height: 98.75vh;
-
+    height: 68.75vh;
     border: 2px solid red;
-    min-width: 23.4375rem;
+    // min-height: 40vh;
+    // max-height: 153vh;
+    // border: 2px solid red;
+    // min-width: 23.4375rem;
 }
