@@ -10,6 +10,19 @@ const button7 = document.getElementById("button7");
 const button8 = document.getElementById("button8");
 const button9 = document.getElementById("button9");
 
+//Add commas per each 3 characters
+
+// const input = document.querySelector("#inputBar");
+
+// input.addEventListener("input", (event) => {
+//   const currentVal = input.value;
+//   if (currentVal.length > 3) {
+//     const newVal = currentVal.toLocaleString("en-US");
+//     input.value = newVal;
+//     console.log(newVal);
+//   }
+// });
+
 //Button 0-9
 
 button0.addEventListener("click", (event) => {
@@ -179,5 +192,5 @@ buttonCalculate.addEventListener("click", (event) => {
   } else if (operations == "addition") {
     calc = currentVal + newVal;
   }
-  inputBar.value = calc;
+  inputBar.value = calc.toLocaleString();
 });

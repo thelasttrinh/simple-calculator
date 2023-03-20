@@ -53,9 +53,16 @@ nav {
 }
 .firstRow button:active {
   animation: fade 0.1s linear;
+  border: #e6e6e6;
 }
 .firstRow button:hover {
   background-color: #e6e6e6;
+}
+.firstRow button:focus {
+  border: white 2px solid;
+}
+.firstRow #button__Divide:focus {
+  border: white 2px solid;
 }
 .firstRow #button__Divide:hover {
   background-color: #e6e6e6;
@@ -76,12 +83,21 @@ nav {
   border: #333333;
   flex-shrink: 0;
 }
-.secondRow button:hover {
-  background-color: #e6e6e6;
-}
 .secondRow #button__Multiply {
   background-color: #fe9504;
   border: #fe9504;
+}
+.secondRow button:hover {
+  background-color: #e6e6e6;
+}
+.secondRow button:focus {
+  border: white 2px solid;
+}
+.secondRow #button__Multiply:focus {
+  border: white 2px solid;
+}
+.secondRow #button__Multiply:hover {
+  background-color: #e6e6e6;
 }
 
 .thirdRow {
@@ -106,6 +122,15 @@ nav {
   background-color: #fe9504;
   border: #fe9504;
 }
+.thirdRow button:focus {
+  border: white 2px solid;
+}
+.thirdRow #button__Subtract:focus {
+  border: white 2px solid;
+}
+.thirdRow #button__Subtract:hover {
+  background-color: #e6e6e6;
+}
 
 .fourthRow {
   display: flex;
@@ -129,6 +154,15 @@ nav {
   background-color: #fe9504;
   border: #fe9504;
 }
+.fourthRow button:focus {
+  border: white 2px solid;
+}
+.fourthRow #button__Addition:focus {
+  border: white 2px solid;
+}
+.fourthRow #button__Addition:hover {
+  background-color: #e6e6e6;
+}
 
 .fifthRow {
   display: flex;
@@ -146,6 +180,15 @@ nav {
   flex-shrink: 0;
 }
 .fifthRow button:hover {
+  background-color: #e6e6e6;
+}
+.fifthRow button:focus {
+  border: white 2px solid;
+}
+.fifthRow #button__Calculate:focus {
+  border: white 2px solid;
+}
+.fifthRow #button__Calculate:hover {
   background-color: #e6e6e6;
 }
 .fifthRow #button0 {
